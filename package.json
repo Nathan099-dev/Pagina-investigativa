@@ -1,0 +1,12 @@
+{
+  "name": "pagina-investigativa",
+  "version": "1.0.0",
+  "description": "projeto inspitado em uma página real desenvolvida pelo hacker ético e investigador Bruno Fraga",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
