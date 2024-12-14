@@ -93,6 +93,15 @@ header{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    background-color: #f0f2f5;
+    padding: 2.5rem;
+    
 }
 
 main{
