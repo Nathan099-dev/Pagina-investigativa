@@ -9,11 +9,12 @@ const Modal = {
 }
 
 
-function criarInvestigacao(nomeInvestigacao, dataDeInício, informações){
+function criarInvestigacao(nomeInvestigacao, dataDeInício, nomeInvestigado, informações){
     const novaInvestigacao = {
         nomeInvestigacao,
         dataDeInício,
-        informações,
+        nomeInvestigado,
+        informações
     }
 
     if (nomeInvestigacao !== null ?? dataDeInício !== null ?? informações !== null) {
