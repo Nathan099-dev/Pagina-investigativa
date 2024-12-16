@@ -1,3 +1,6 @@
+const emailCadastrado = 'email.teste@teste.com'
+const senhaCadastrada = '123'
+
 const tentativasPermitidas = 3;
 const tentativasRealizadas = 0;
 
@@ -20,7 +23,7 @@ function fazerLogin(){
 
         }else{
             alert('Entrada permitida');
-            document.location.href = '../html/index.html';
+            document.location.href = './html/index.html';
         }
     }
 }
