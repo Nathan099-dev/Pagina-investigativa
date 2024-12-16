@@ -1,3 +1,8 @@
+function voltarAoLogin(){
+    return window.location.href = '../html/login.html'
+}
+
+
 const emailCadastrado = 'email.teste@teste.com'
 const senhaCadastrada = '123'
 
