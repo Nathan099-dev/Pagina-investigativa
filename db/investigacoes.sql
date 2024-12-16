@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS investigacoes(
 
 
 INSERT INTO investigacoes VALUES
-('Águia branca', 'Maria Aparecida','Investigação iniciada por suspeita de envolvimento com a distribuição de cocaína','2024-12-16');
+('Águia branca', 'Maria Aparecida','Investigação iniciada por suspeita de envolvimento com trafico','2024-12-16');
 
 
 SELECT * FROM investigacoes;
