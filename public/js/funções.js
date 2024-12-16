@@ -29,6 +29,8 @@ function fazerLogin(){
 }
 
 
+
+
 const Modal = {
     open(){
         document.querySelector('.modal-overlay').classList.add('active');
@@ -59,6 +61,9 @@ function criarInvestigacao(nomeInvestigacao, dataDeInício, nomeInvestigado, inf
     localStorage.setItem('investigacao', JSON.stringify(investigacao));
 
 }
+
+
+
 
 function voltarAoLogin(){
     return window.location.href = '../html/login.html'
