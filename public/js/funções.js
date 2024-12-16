@@ -9,12 +9,17 @@ const Modal = {
 }
 
 
-function criarInvestigacao(nome, dataDeInício, informações){
+function criarInvestigacao(nomeInvestigacao, dataDeInício, informações){
     const novaInvestigacao = {
-        nome,
+        nomeInvestigacao,
         dataDeInício,
         informações,
     }
+
+    if (nomeInvestigacao !== null ?? dataDeInício !== null ?? informações !== null) {
+        window.alert('🚨investigação criada com sucesso!')
+    }
+
 
     //Salva as informações da investigação criada
     let investigacao = JSON.parse(localStorage.getItem('investigacao'))
