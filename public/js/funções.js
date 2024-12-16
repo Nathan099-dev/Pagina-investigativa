@@ -1,36 +1,3 @@
-const emailCadastrado = 'email.teste@teste.com'
-const senhaCadastrada = '123'
-
-const tentativasPermitidas = 3;
-const tentativasRealizadas = 0;
-
-function fazerLogin(){
-    for(let i = tentativasRealizadas; i < tentativasPermitidas; i++){
-        const emailUsuario = document.getElementById('email');
-        const senhaUsuario = document.getElementById('senha');
-
-        if (emailUsuario !== emailCadastrado && senhaUsuario !== senhaCadastrada) {
-            alert('Falha ao efetuar o login');
-
-            emailUsuario.style.border = '1px solid red';
-            senhaUsuario.style.border = '1px solid red';
-            
-            tentativasPermitidas--;
-            tentativasRealizadas++;
-
-        }else if (tentativasPermitidas == 0 && tentativasRealizadas == 3) {
-            alert('Acesso bloqueado');
-
-        }else{
-            alert('Entrada permitida');
-            document.location.href = '../html/index.html';
-        }
-    }
-}
-
-
-
-
 const Modal = {
     open(){
         document.querySelector('.modal-overlay').classList.add('active');
@@ -63,8 +30,30 @@ function criarInvestigacao(nomeInvestigacao, dataDeInício, nomeInvestigado, inf
 }
 
 
+function fazerLogin(){
+    let emailExemplo = 'exemplo@email.com'
+    let senhaExemplo = 'senha123';
+    const emailUsuario = document.getElementById('email');
+    const senhaUsuario = document.getElementById('senha');
+    
+    if (emailUsuario == "") {
+        alert('Campo inválido');
+        
+    }else if (senhaUsuario == "") {
+        alert('Campo inválido');
+
+    }else if (email !== emailExemplo || senha !== senhaExemplo) {
+        alert('Dados inválidos')
+
+    }else{
+        return  window.location.href ='../html/index.html';
+    }
+    
+}
+
 
 
 function voltarAoLogin(){
-    return window.location.href = '../html/login.html'
+    return window.location.href = '../html/login.html';
+
 }
