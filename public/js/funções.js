@@ -1,3 +1,31 @@
+const tentativasPermitidas = 3;
+const tentativasRealizadas = 0;
+
+function fazerLogin(){
+    for(let i = tentativasRealizadas; i < tentativasPermitidas; i++){
+        const emailUsuario = document.getElementById('email');
+        const senhaUsuario = document.getElementById('senha');
+
+        if (emailUsuario !== emailCadastrado && senhaUsuario !== senhaCadastrada) {
+            alert('Falha ao efetuar o login');
+
+            emailUsuario.style.border = '1px solid red';
+            senhaUsuario.style.border = '1px solid red';
+            
+            tentativasPermitidas--;
+            tentativasRealizadas++;
+
+        }else if (tentativasPermitidas == 0 && tentativasRealizadas == 3) {
+            alert('Acesso bloqueado');
+
+        }else{
+            alert('Entrada permitida');
+            document.location.href = '../html/index.html';
+        }
+    }
+}
+
+
 const Modal = {
     open(){
         document.querySelector('.modal-overlay').classList.add('active');
