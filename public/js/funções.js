@@ -1,8 +1,3 @@
-function voltarAoLogin(){
-    return window.location.href = '../html/login.html'
-}
-
-
 const emailCadastrado = 'email.teste@teste.com'
 const senhaCadastrada = '123'
 
@@ -28,7 +23,7 @@ function fazerLogin(){
 
         }else{
             alert('Entrada permitida');
-            document.location.href = './html/index.html';
+            document.location.href = '../html/index.html';
         }
     }
 }
@@ -63,4 +58,8 @@ function criarInvestigacao(nomeInvestigacao, dataDeInício, nomeInvestigado, inf
     investigacao.push(novaInvestigacao)
     localStorage.setItem('investigacao', JSON.stringify(investigacao));
 
+}
+
+function voltarAoLogin(){
+    return window.location.href = '../html/login.html'
 }
