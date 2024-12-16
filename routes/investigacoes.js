@@ -1,7 +1,7 @@
 import {express} from 'express';
 
 const router = express.Router();
-const {adicionaInvestigacao, buscarInvestigacoes} = require('../db/investigacoes')
+const {adicionaInvestigacao, buscarInvestigacoes} = require('../models/investigacoes')
 
 //Rota para adicionar uma nova investigação
 router.post('/',(req, res) =>{
