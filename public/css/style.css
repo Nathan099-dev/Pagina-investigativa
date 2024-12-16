@@ -77,14 +77,13 @@ header{
     cursor: pointer;
 }
 
-.menu .icons i#alerta{
-    margin-right: 20px;
+.menu .icons i{
+    margin: 0 10px;
+    
+
 }
 
-.menu .icons i#user{
-    margin-left: 25px;
-    cursor: pointer;
-}
+
 
 .menu .links button:hover{
     background-color: rgb(3, 56, 3);
