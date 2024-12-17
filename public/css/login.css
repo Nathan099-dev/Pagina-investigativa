@@ -121,8 +121,11 @@ form label{
 }
 
 form input{
-    padding: 3px 12px;
+    padding: 5px 12px;
     outline: none;
+    border: 1px solid #0566bc;
+    background-color: #000;
+    color: white;
 
 }
 
