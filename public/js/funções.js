@@ -1,25 +1,3 @@
-//validação de login
-function fazerLogin(){
-    const emailUsuario = document.querySelector('#email');
-    const senhaUsuario = document.querySelector('#senha');
-
-    if (emailUsuario == "") {
-        alert('Campo inválido')
-        document.getElementById('email').style.border = '1ox solid red'
-    }
-
-    if (senhaUsuario == "") {
-        alert('Campo inválido')
-        document.getElementById('senha').style.border = '1px solid red'
-    }
-
-    else{
-        window.location.href = '../html/index.html'
-    }
-
-}
-
-
 //função do comportamento do modal
 const Modal = {
     open(){
