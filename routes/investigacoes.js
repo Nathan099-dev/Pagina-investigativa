@@ -1,4 +1,4 @@
-import {express} from 'express';
+const express = require('express');
 
 const router = express.Router();
 const {adicionaInvestigacao, buscarInvestigacoes} = require('../models/investigacoes')
@@ -19,7 +19,7 @@ router.post('/',(req, res) =>{
 router.get('/', (req, res) => {
     buscarInvestigacoes((err, rows) => {
         if (err) {
-            return res.status(500).sen('Erro! Nenhuma investigação encontrada')
+            return res.status(500).send('Erro! Nenhuma investigação encontrada')
         }else{
             return res.status(200).send(rows)
         }
