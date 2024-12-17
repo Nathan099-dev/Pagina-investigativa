@@ -1,20 +1,26 @@
-console.log('script carregado')
-
-let emailExemplo = 'exemplo@email.com'
-let senhaExemplo = 'senha123';
-
+//validação de login
 function fazerLogin(){
     const emailUsuario = document.querySelector('#email');
     const senhaUsuario = document.querySelector('#senha');
 
-    if (emailUsuario == emailExemplo && senhaUsuario == senhaExemplo) {
+    if (emailUsuario == "") {
+        alert('Campo inválido')
+        document.getElementById('email').style.border = '1ox solid red'
+    }
+
+    if (senhaUsuario == "") {
+        alert('Campo inválido')
+        document.getElementById('senha').style.border = '1px solid red'
+    }
+
+    else{
         window.location.href = '../html/index.html'
     }
 
 }
 
 
-
+//função do comportamento do modal
 const Modal = {
     open(){
         document.querySelector('.modal-overlay').classList.add('active');
@@ -25,7 +31,7 @@ const Modal = {
     }
 }
 
-
+//função para criar a investigação
 function criarInvestigacao(nomeInvestigacao, dataDeInício, nomeInvestigado, informações){
     const novaInvestigacao = {
         nomeInvestigacao,
@@ -47,7 +53,7 @@ function criarInvestigacao(nomeInvestigacao, dataDeInício, nomeInvestigado, inf
 }
 
 
-
+//função para voltar para a área de login
 function voltarAoLogin(){
     return window.location.href = '../html/login.html';
 
