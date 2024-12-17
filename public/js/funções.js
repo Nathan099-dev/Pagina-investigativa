@@ -1,3 +1,20 @@
+console.log('script carregado')
+
+let emailExemplo = 'exemplo@email.com'
+let senhaExemplo = 'senha123';
+
+function fazerLogin(){
+    const emailUsuario = document.querySelector('#email');
+    const senhaUsuario = document.querySelector('#senha');
+
+    if (emailUsuario == emailExemplo && senhaUsuario == senhaExemplo) {
+        window.location.href = '../html/index.html'
+    }
+
+}
+
+
+
 const Modal = {
     open(){
         document.querySelector('.modal-overlay').classList.add('active');
@@ -27,28 +44,6 @@ function criarInvestigacao(nomeInvestigacao, dataDeInício, nomeInvestigado, inf
     investigacao.push(novaInvestigacao)
     localStorage.setItem('investigacao', JSON.stringify(investigacao));
 
-}
-
-
-function fazerLogin(){
-    let emailExemplo = 'exemplo@email.com'
-    let senhaExemplo = 'senha123';
-    const emailUsuario = document.getElementById('email');
-    const senhaUsuario = document.getElementById('senha');
-    
-    if (emailUsuario == "") {
-        alert('Campo inválido');
-        
-    }else if (senhaUsuario == "") {
-        alert('Campo inválido');
-
-    }else if (email !== emailExemplo || senha !== senhaExemplo) {
-        alert('Dados inválidos')
-
-    }else{
-        return  window.location.href ='../html/index.html';
-    }
-    
 }
 
 
