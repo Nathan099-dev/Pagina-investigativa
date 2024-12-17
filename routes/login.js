@@ -8,7 +8,7 @@ app.use('/routes/investigacoes')
 
 //rota para redirecionar para a página principal do site
 router.get((req, res) => {
-    res.redirect('../html/index.html')
+    res.redirect('../public/html/index.html')
 });
 
 const port = process.env.port || 3000;
