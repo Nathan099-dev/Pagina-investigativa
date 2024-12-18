@@ -1,3 +1,20 @@
+function fazerLogin(email, senha){
+    const emailUsuario = document.getElementById('email');
+    const senhaUsuario = document.getElementById('senha');
+
+    if (emailUsuario.value === "") {
+        window.alert('Campo inválido')
+        document.getElementById('email').style.border = '1px solid red';
+    }
+
+    if (senhaUsuario.value === "") {
+        window.alert('Campo inválido');
+        document.getElementById('senha').style.border = '1px solid red';
+        
+
+    }
+}
+
 //função do comportamento do modal
 const Modal = {
     open(){
