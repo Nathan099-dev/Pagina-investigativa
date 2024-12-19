@@ -1,15 +1,16 @@
-CREATE TABLE IF NOT EXISTS investigacoes(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    nomeInvestigacao TEXT NOT NULL,
-    nomeDoInvestigado TEXT NOT NULL,
-    informações TEXT NOT NULL,
-    dataInicio TEXT NOT NULL
+create database  if not exists paginainvestigativa;
+use paginainvestigativa;
+
+create table if not exists investigações(
+id int primary key auto_increment,
+nome varchar(50) not null,
+informações varchar(300) not null,
+datainicio date
 );
 
+insert into investigações values
+(null, 'Bruno Favale Castelucci', 'Acesso ao banco de dados da empresa', '2024-12-19'),
+(null, 'Denis Fonti', 'Roubou  a garrafa do amigo', '2024-12-19'),
+(null, 'Daiane Flora Baldi', 'Terminou com o namorado porque ele era deficiente', '2024-12-19');
 
-INSERT INTO investigacoes VALUES
-('Águia branca', 'Maria Aparecida','Investigação iniciada por suspeita de envolvimento com trafico','2024-12-16');
-
-
-SELECT * FROM investigacoes;
-
+select * from investigações;
