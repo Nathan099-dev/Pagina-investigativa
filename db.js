@@ -1,4 +1,4 @@
-const sqlite3  = require('sqlite3').verbose();
+const sql = require('sql2');
 
 const db = new sqlite3.Database('./db/investigacoes.sql', (err) => {
     if (err) {
