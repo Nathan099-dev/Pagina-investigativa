@@ -1,10 +1,9 @@
-const { connection } = require('mongoose');
 const sql = require('mysql2');
 
 const conexão = mysql.createConnection({
     host:'localhost',
     user:'root',
-    password: 'natgambini234',
+    password: 'natgambini1234',
     database: 'paginainvestigativa'
 });
 
