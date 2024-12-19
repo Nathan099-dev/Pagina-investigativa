@@ -1,6 +1,6 @@
 const sql = require('sql2');
 
-const db = new sqlite3.Database('./db/investigacoes.sql', (err) => {
+const db = new sql.Database('./db/investigacoes.sql', (err) => {
     if (err) {
         console.log('Erro ao acessar o banco de dados');
 
